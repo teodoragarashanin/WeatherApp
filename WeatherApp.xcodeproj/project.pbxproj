@@ -18,7 +18,6 @@
 		E8C6981D1D4BF3BD004BD5A0 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E8C6981C1D4BF3BD004BD5A0 /* CoreLocation.framework */; };
 		E8C698251D4BFBA8004BD5A0 /* ListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E8C698241D4BFBA8004BD5A0 /* ListViewController.m */; };
 		E8C698281D4BFC7C004BD5A0 /* ListTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E8C698271D4BFC7C004BD5A0 /* ListTableViewCell.m */; };
-		E8E445381D4CC3FC00AA545D /* DataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = E8E445371D4CC3FC00AA545D /* DataManager.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,8 +41,6 @@
 		E8C698241D4BFBA8004BD5A0 /* ListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ListViewController.m; sourceTree = "<group>"; };
 		E8C698261D4BFC7C004BD5A0 /* ListTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ListTableViewCell.h; sourceTree = "<group>"; };
 		E8C698271D4BFC7C004BD5A0 /* ListTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ListTableViewCell.m; sourceTree = "<group>"; };
-		E8E445361D4CC3FC00AA545D /* DataManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataManager.h; sourceTree = "<group>"; };
-		E8E445371D4CC3FC00AA545D /* DataManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataManager.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -141,8 +138,6 @@
 			isa = PBXGroup;
 			children = (
 				E8C6981E1D4BF4DC004BD5A0 /* Constants.h */,
-				E8E445361D4CC3FC00AA545D /* DataManager.h */,
-				E8E445371D4CC3FC00AA545D /* DataManager.m */,
 				E8C698191D4BF318004BD5A0 /* City.h */,
 				E8C6981A1D4BF318004BD5A0 /* City.m */,
 				E81F3C591D4CEC900075BBE0 /* Cells */,
@@ -222,7 +217,6 @@
 			files = (
 				E8C698071D4BEFBA004BD5A0 /* AddViewController.m in Sources */,
 				E8C698251D4BFBA8004BD5A0 /* ListViewController.m in Sources */,
-				E8E445381D4CC3FC00AA545D /* DataManager.m in Sources */,
 				E8C698041D4BEFBA004BD5A0 /* AppDelegate.m in Sources */,
 				E81F3C5C1D4CEEC20075BBE0 /* PageContentViewController.m in Sources */,
 				E8C698281D4BFC7C004BD5A0 /* ListTableViewCell.m in Sources */,

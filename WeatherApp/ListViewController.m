@@ -26,9 +26,6 @@
 
 #pragma mark - Properties
 
--(DataManager *) dataManager {
-    return [DataManager sharedInstance];
-}
 
 - (NSMutableArray *)loadCustomObjectWithKey:(NSString *)key {
     NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
@@ -97,11 +94,7 @@
     
     
     ListTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"Cell"];
-    if (self.dataManager.itemsArray==nil) {
-        cell.cityName.text = @"Belgrade";
-        return cell;
-    } else {
-        
+    
         NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
         NSArray *array= [NSKeyedUnarchiver unarchiveObjectWithData:[defaults objectForKey:LIST_OF_CITIES]];
         City *city = [array objectAtIndex: indexPath.row];
@@ -109,7 +102,7 @@
         
         return cell;
     }
-}
+
 
 #pragma mark - UITableViewDelegate
 

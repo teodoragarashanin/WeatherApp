@@ -10,6 +10,5 @@
 #define Constants_h
 
 static NSString *const LIST_OF_CITIES              = @"LIST_OF_CITIES";
-static NSString *const SELECTED_CITY              = @"SELECTED_CITY";
 
 #endif /* Constants_h */

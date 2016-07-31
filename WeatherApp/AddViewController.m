@@ -21,9 +21,6 @@
 
 #pragma mark - Properties
 
--(DataManager *) dataManager {
-    return [DataManager sharedInstance];
-}
 
 - (void)saveCustomObject:(NSMutableArray *)object key:(NSString *)key {
    
@@ -49,9 +46,6 @@
 }
 
 
-
-
-
 #pragma mark - Actions
 
 
@@ -62,8 +56,6 @@
 }
 
 
-
-
 -(IBAction)doneButtonTapped {
 
     NSLog(@"%@", self.cityNameTextField.text);
@@ -71,7 +63,6 @@
   
     City *city = [[City alloc]initWithName:self.cityNameTextField.text andLongitude:self.longitude andLatitude:self.latitude];
     NSLog(@"%@, %f, %f", city.name, city.latitude, city.longitude);
-    [self.dataManager.itemsArray addObject: city];
     [self.cityNameTextField resignFirstResponder];
      NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
      NSArray *array= [NSKeyedUnarchiver unarchiveObjectWithData:[defaults objectForKey:LIST_OF_CITIES]];
