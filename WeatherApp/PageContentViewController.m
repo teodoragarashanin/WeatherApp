@@ -12,20 +12,15 @@
 
 
 @interface PageContentViewController ()
-
 @property (strong, nonatomic) NSString *yahooWoeidURL;
 @property (copy, nonatomic) NSString *woeid;
 @property (copy, nonatomic) NSString *yahooWeatherURL;
-
 @property (weak, nonatomic) IBOutlet UILabel *temperature;
-
 @end
-
 
 @implementation PageContentViewController
 
 #pragma mark View Lifecycle
-
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -44,10 +39,7 @@
     self.yahooWoeidURL = urlString;
 }
 
-
-
 #pragma mark - Properties
-
 
 - (void)setYahooWoeidURL:(NSString *)yahooWoeidURL {
     
@@ -121,9 +113,5 @@
         });
     }
 }
-
-
-
-
 
 @end

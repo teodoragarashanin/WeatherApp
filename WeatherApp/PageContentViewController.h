@@ -12,7 +12,6 @@
 
 @interface PageContentViewController : UIViewController
 @property (nonatomic) NSUInteger pageIndex;
-@property (nonatomic, strong) NSString *text;
 @property (nonatomic, weak) IBOutlet UILabel *cityLabel;
 @property (strong, nonatomic) City *city;
 @end

@@ -9,10 +9,4 @@
 #import "ListTableViewCell.h"
 
 @implementation ListTableViewCell
-
-
-
-
-
-
 @end

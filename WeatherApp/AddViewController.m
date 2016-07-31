@@ -11,16 +11,9 @@
 #import <CoreLocation/CoreLocation.h>
 #import "Constants.h"
 
-@interface AddViewController ()
-
-
-
-@end
-
 @implementation AddViewController
 
 #pragma mark - Properties
-
 
 - (void)saveCustomObject:(NSMutableArray *)object key:(NSString *)key {
    
@@ -42,25 +35,16 @@
 
 -(void) viewDidLoad {
     [super viewDidLoad];
-    
 }
-
 
 #pragma mark - Actions
 
-
 - (IBAction)saveButtonTapped:(UIButton *)sender {
-    
     [self findCoordinates:self.cityNameTextField.text];
-    
 }
 
-
 -(IBAction)doneButtonTapped {
-
-    NSLog(@"%@", self.cityNameTextField.text);
     
-  
     City *city = [[City alloc]initWithName:self.cityNameTextField.text andLongitude:self.longitude andLatitude:self.latitude];
     NSLog(@"%@, %f, %f", city.name, city.latitude, city.longitude);
     [self.cityNameTextField resignFirstResponder];
@@ -68,7 +52,6 @@
      NSArray *array= [NSKeyedUnarchiver unarchiveObjectWithData:[defaults objectForKey:LIST_OF_CITIES]];
      NSMutableArray *newArray = [NSMutableArray arrayWithArray:array];
     [newArray addObject:city];
-    
     [self saveCustomObject:newArray key:LIST_OF_CITIES];
 
     
@@ -82,22 +65,15 @@
         if (error) {
             NSLog(@"%@", error);
         } else {
-            
             CLPlacemark *placemark = [placemarks lastObject];
-            
-            NSLog(@"%@", placemark.location.description);
             CLLocationDegrees  latitude = (double) placemark.location.coordinate.latitude;
             self.latitude = latitude;
-            NSLog(@"%f", latitude);
             CLLocationDegrees  longitude = (double) placemark.location.coordinate.longitude;
-            NSLog(@"%f", longitude);
             self.longitude = longitude;
-            
         }
     }];
     
 }
-
 
 @end
 

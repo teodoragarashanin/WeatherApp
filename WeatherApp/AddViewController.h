@@ -7,12 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
-#import <CoreLocation/CoreLocation.h>
 #import <MapKit/MapKit.h>
 #import <CoreLocation/CoreLocation.h>
 #import "City.h"
-
-
 
 @interface AddViewController : UIViewController <CLLocationManagerDelegate>
 @property (weak, nonatomic) IBOutlet UITextField *cityNameTextField;

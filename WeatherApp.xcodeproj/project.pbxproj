@@ -55,15 +55,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		E81F3C591D4CEC900075BBE0 /* Cells */ = {
-			isa = PBXGroup;
-			children = (
-				E8C698261D4BFC7C004BD5A0 /* ListTableViewCell.h */,
-				E8C698271D4BFC7C004BD5A0 /* ListTableViewCell.m */,
-			);
-			name = Cells;
-			sourceTree = "<group>";
-		};
 		E8C697F31D4BEFBA004BD5A0 = {
 			isa = PBXGroup;
 			children = (
@@ -140,7 +131,8 @@
 				E8C6981E1D4BF4DC004BD5A0 /* Constants.h */,
 				E8C698191D4BF318004BD5A0 /* City.h */,
 				E8C6981A1D4BF318004BD5A0 /* City.m */,
-				E81F3C591D4CEC900075BBE0 /* Cells */,
+				E8C698261D4BFC7C004BD5A0 /* ListTableViewCell.h */,
+				E8C698271D4BFC7C004BD5A0 /* ListTableViewCell.m */,
 			);
 			name = Models;
 			sourceTree = "<group>";
