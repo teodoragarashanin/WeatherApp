@@ -34,14 +34,13 @@
  
     [encoder encodeObject:self.name forKey:@"name"];
     [encoder encodeDouble:self.longitude forKey:@"longitude"];
-     [encoder encodeDouble:self.latitude forKey:@"latitude"];
+    [encoder encodeDouble:self.latitude forKey:@"latitude"];
  
 }
 
 -(id)initWithCoder:(NSCoder *)decoder {
     self = [super init];
-    if ( self != nil )
-    {
+    if ( self != nil ) {
     
         self.name = [decoder decodeObjectForKey:@"name"];
         self.latitude = [decoder decodeDoubleForKey:@"longitude"];

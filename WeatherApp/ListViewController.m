@@ -87,7 +87,6 @@
         return cell;
 }
 
-
 #pragma mark - UITableViewDelegate
 
 -(void) tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
@@ -129,6 +128,7 @@
                                   animated:NO
                                 completion:nil];
     }
+    
     self.pageViewController = pageController;
     [self addChildViewController:self.pageViewController];
     [self.view addSubview:self.pageViewController.view];
@@ -137,8 +137,8 @@
 
 - (PageContentViewController *)viewControllerAtIndex:(NSUInteger)pageIndex {
    
-    if (pageIndex < [self.array count])
-    {
+    if (pageIndex < [self.array count]) {
+        
         PageContentViewController *pageContentController = [self.storyboard instantiateViewControllerWithIdentifier:@"PageContentViewController"];
         pageContentController.pageIndex = pageIndex;
         pageContentController.city = self.array[pageIndex];
