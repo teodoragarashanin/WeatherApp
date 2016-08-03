@@ -17,14 +17,9 @@
 - (instancetype)initWithName:(NSString *)name andLongitude: (double) longitude andLatitude: (double) latitude {
     
     if (self = [super init]) {
-        
-        
         self.name = name;
         self.latitude = latitude;
         self.longitude = longitude;
-        
-    
-   
     }
     
     return self;
@@ -34,20 +29,16 @@
  
     [encoder encodeObject:self.name forKey:@"name"];
     [encoder encodeDouble:self.longitude forKey:@"longitude"];
-     [encoder encodeDouble:self.latitude forKey:@"latitude"];
+    [encoder encodeDouble:self.latitude forKey:@"latitude"];
  
 }
 
 -(id)initWithCoder:(NSCoder *)decoder {
     self = [super init];
-    if ( self != nil )
-    {
-    
+    if ( self != nil ) {
         self.name = [decoder decodeObjectForKey:@"name"];
         self.latitude = [decoder decodeDoubleForKey:@"longitude"];
         self.latitude = [decoder decodeDoubleForKey:@"latitude"];
-        
-        
     }
     return self;
 }
